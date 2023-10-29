@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<style>
+        *{
+	margin: 0;
+	padding: 0;
+	box box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background:linear-gradient(60deg,#333131,#000000);
+}
+.cantenar{
+	border: 1px solid #333333;
+	padding: 20px;
+	background: transparent;
+	
+
+}
+input{
+	border: none;
+	padding: 20px;
+	text-align: right;
+	font-size: 20px;
+	background: transparent;
+	box-shadow: 0px 3px 15px rgba(110,140,80,0.5);
+	margin: 30px 10px;
+	width: 275px;
+}
+input::placeholder{
+	color: white;
+}
+button{
+	height: 60px;
+	width: 60px;
+	margin: 10px;
+	border: none;
+	border-radius: 50%;
+	background: transparent;
+	color: white;
+	box-shadow: 0px 3px 15px rgba(110,140,80,0.5);
+	cursor: pointer;
+	font-size: 20px;
+}
+.equalbtn{
+	background-color: orangered;
+}
+.operatorbtn{
+	color: yellow;
+}
+
+
+    </style>
+</head>
+<body>
+	 <div class="cantenar">
+        <input type="number" placeholder="0">
+        <div>
+            <button>AC</button>
+            <button>DEL</button>
+            <button class="operatorbtn">%</button>
+            <button class="operatorbtn">/</button>
+        </div>
+        
+        <div>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="operatorbtn">*</button>
+        </div>
+
+        <div>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="operatorbtn">-</button>
+        </div>
+
+        <div>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="operatorbtn">+</button>
+        </div>
+
+        <div>
+            <button>00</button>
+            <button>0</button>
+            <button class="operatorbtn">.</button>
+            <button class="equalbtn">=</button>
+        </div>
+    </div>
+
+</body>
+</html>
